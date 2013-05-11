@@ -1,0 +1,84 @@
+
+
+*******************************************************************************
+Fri May 10 11:51:10 2013
+
+
+FIT:    data read from "./test" u 1:2
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.156499          delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.140325
+
+initial set of free parameter values
+
+a               = 1
+m               = 1
+
+After 5903 iterations the fit converged.
+final sum of squares of residuals : 1.64917e-16
+rel. change during last iteration : -1.62625e-06
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4.54034e-09
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.06146e-17
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 0.0468031        +/- 0.01604      (34.26%)
+m               = 7.53494          +/- 0.3439       (4.565%)
+
+
+correlation matrix of the fit parameters:
+
+               a      m      
+a               1.000 
+m               1.000  1.000 
+
+
+*******************************************************************************
+Fri May 10 11:53:15 2013
+
+
+FIT:    data read from "./test" u 1:2
+        format = x:z
+        #datapoints = 9
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 4.16198e-10       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1.50956e-05
+
+initial set of free parameter values
+
+a               = 1
+m               = 10
+
+After 1368171 iterations the fit converged.
+final sum of squares of residuals : 9.99987e-31
+abs. change during last iteration : -1.69386e-35
+
+
+Hmmmm.... Sum of squared residuals is zero. Can't compute errors.
+
+Final set of parameters 
+======================= 
+
+a               = 0.999966       
+m               = 10.5966        
