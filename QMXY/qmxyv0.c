@@ -5,7 +5,7 @@
 #include <gsl/gsl_sf_bessel.h>
 
 # define DIM 2
-# define KMAX 20
+# define KMAX 50
 
 int *conf[DIM];
 
@@ -24,6 +24,7 @@ int START;
 int EQUIL,SWEEP,MEAS;
 int NCH,Q1,Q2;
 int TMAX,TMIN;
+int kmax;
 double IB[2*KMAX+1],IBT[2*KMAX+1];
 double WT;
 int main(argc,argv)
@@ -116,6 +117,9 @@ int main(argc,argv)
   initbessel();
   initconf();
 
+  /* track maximum value of kmax */
+  kmax = 0;
+
   for(k1=0;k1<EQUIL;k1++)
     {
       sus = update();
@@ -171,6 +175,7 @@ int main(argc,argv)
     fclose(fptr);
     }
  //printconf();  
+ printf("Maximum k encountered=%d\n",kmax);
  for(d=0;d<DIM;d++) free(conf[d]);
  for(d=0;d<=2*DIM;d++) free(next[d]);
  free(corr); free(avgcorr);
@@ -223,6 +228,7 @@ void checkconf(void)
 	{
 	  k += conf[d][p];
 	  k -= conf[d][next[DIM-(d+1)][p]];
+          if(abs(conf[d][p])>kmax) kmax=conf[d][p];
 	}
 
       if(k != 0)

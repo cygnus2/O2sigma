@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[      3213,        104]
-NotebookOptionsPosition[      2689,         81]
-NotebookOutlinePosition[      3026,         96]
-CellTagsIndexPosition[      2983,         93]
+NotebookDataLength[      3753,        123]
+NotebookOptionsPosition[      3121,         96]
+NotebookOutlinePosition[      3458,        111]
+CellTagsIndexPosition[      3415,        108]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -77,6 +77,21 @@ Cell[BoxData["2.4409180264737473`*^-30"], "Print",
  CellChangeTimes->{{3.573406364595952*^9, 3.573406407917057*^9}, 
    3.573406457616518*^9, 3.573406541981537*^9}]
 }, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"BesselI", "[", 
+   RowBox[{"0", ",", "0.1"}], "]"}], 
+  RowBox[{"BesselI", "[", 
+   RowBox[{"1", ",", "0.1"}], "]"}]]], "Input",
+ CellChangeTimes->{{3.577273448128154*^9, 3.577273449722016*^9}, {
+  3.577273524790059*^9, 3.577273527154708*^9}}],
+
+Cell[BoxData["20.024989589839407`"], "Output",
+ CellChangeTimes->{3.577273450462694*^9, 3.577273528110358*^9}]
 }, Open  ]]
 },
 WindowSize->{740, 631},
@@ -96,7 +111,7 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[579, 22, 1064, 29, 141, "Input"],
+Cell[579, 22, 1064, 29, 125, "Input"],
 Cell[CellGroupData[{
 Cell[1668, 55, 162, 2, 23, "Print"],
 Cell[1833, 59, 162, 2, 23, "Print"],
@@ -105,10 +120,13 @@ Cell[2165, 67, 163, 2, 23, "Print"],
 Cell[2331, 71, 163, 2, 23, "Print"],
 Cell[2497, 75, 164, 2, 23, "Print"]
 }, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2710, 83, 282, 7, 57, "Input"],
+Cell[2995, 92, 110, 1, 30, "Output"]
 }, Open  ]]
 }
 ]
 *)
 
 (* End of internal cache information *)
-
